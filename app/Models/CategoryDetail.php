@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class CategoryDetail extends Model
+{
+    public $timestamps = false;
+    protected $guarded = [];
+    protected $primaryKey = 'cateagesex_id';
+    protected $table = 'category_detail';
+
+}
