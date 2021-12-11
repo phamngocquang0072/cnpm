@@ -2,17 +2,17 @@ import axiosClient from "./axiosClient";
 
 const commentApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/comment';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/comment/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/comment';
     return axiosClient.post(url, request);
   },
 

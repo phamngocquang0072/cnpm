@@ -2,17 +2,17 @@ import axiosClient from "./axiosClient";
 
 const phieuNhapApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/phieu_nhap';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/phieu_nhap/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/phieu_nhap';
     return axiosClient.post(url, request);
   },
 

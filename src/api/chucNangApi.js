@@ -2,17 +2,17 @@ import axiosClient from "./axiosClient";
 
 const chucNangApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/chucnang';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/chucnang/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/chucnang';
     return axiosClient.post(url, request);
   },
 

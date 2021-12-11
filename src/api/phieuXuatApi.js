@@ -2,17 +2,17 @@ import axiosClient from "./axiosClient";
 
 const phieuXuatApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/phieu_xuat';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/phieu_xuat/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/phieu_xuat';
     return axiosClient.post(url, request);
   },
 

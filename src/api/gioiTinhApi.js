@@ -2,17 +2,17 @@ import axiosClient from "./axiosClient";
 
 const gioiTinhApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/gioitinh';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/gioitinh/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/gioitinh';
     return axiosClient.post(url, request);
   },
 

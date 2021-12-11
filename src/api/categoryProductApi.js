@@ -2,17 +2,17 @@ import axiosClient from "./axiosClient";
 
 const categoryProductApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/category_product';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/category_product/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/category_product';
     return axiosClient.post(url, request);
   },
 

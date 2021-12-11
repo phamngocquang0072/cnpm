@@ -2,28 +2,28 @@ import axiosClient from "./axiosClient";
 
 const cateSexApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/cate_sex';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/cate_sex/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/cate_sex';
     return axiosClient.post(url, request);
   },
 
   update: (request) => {
     
-    const url = `/product/${request.id}`;
+    const url = `/cate_sex/${request.id}`;
     axiosClient.put(url, request);
   },
 
   delete: (request) => {
-    const url = `/product/${request.id}`;
+    const url = `/cate_sex/${request.id}`;
     axiosClient.delete(url);
   }
 }

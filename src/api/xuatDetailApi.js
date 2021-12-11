@@ -2,17 +2,17 @@ import axiosClient from "./axiosClient";
 
 const xuatDetailApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/xuat_detail';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/xuat_detail/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/xuat_detail';
     return axiosClient.post(url, request);
   },
 

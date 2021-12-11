@@ -3,23 +3,23 @@ import axiosClient from "./axiosClient";
 
 const customerApi = {
   getAll: (params) => {
-    const url = '/product';
+    const url = '/customer';
     return axiosClient.get(url, { params });
   },
 
   get: (id) => {
-    const url = `/product/${id}`;
+    const url = `/customer/${id}`;
     return axiosClient.get(url);
   },
 
   create: (request) => {
-    const url = '/product';
+    const url = '/customer';
     return axiosClient.post(url, request);
   },
 
   update: (request) => {
     
-    const url = `/product/${request.id}`;
+    const url = `/customer/${request.id}`;
     axiosClient.put(url, request);
   },
 
